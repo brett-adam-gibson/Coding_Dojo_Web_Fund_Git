@@ -1,0 +1,8 @@
+* {
+    margin: 0 auto;
+}
+
+div img{
+    display: block;
+    padding: 3px;
+}

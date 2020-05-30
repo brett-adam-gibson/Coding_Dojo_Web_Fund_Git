@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja to Cat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        //get path to first img and save to var -done
+        //get path to alt src and save to diff var -done
+        //when you click on img swap alt-src to main src
+        $(document).ready(function(){
+            $("#img_box img").click(function(){
+                var path_to_ninja_img = $(this).attr("src") 
+                var path_to_cat_img = $(this).attr("alt-src")
+
+                $(this).attr("src", path_to_cat_img)
+                $(this).attr("alt-src", path_to_ninja_img)
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="img_box">
+        <img src="img/ninja0.png" alt-src="img/cat0.png" alt="1">
+        <img src="img/ninja1.png" alt-src="img/cat1.png" alt="2">
+        <img src="img/ninja2.png" alt-src="img/cat2.png" alt="3">
+        <img src="img/ninja3.png" alt-src="img/cat3.png" alt="4">
+        <img src="img/ninja4.png" alt-src="img/cat4.png" alt="5">
+    </div>
+</body>
+</html>
